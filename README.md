@@ -34,7 +34,7 @@ and of course for monitoring & visualization we use [Grafana](https://grafana.co
 # #tl;dr
 if it stinks, no ventilation. :)
 
-so this
+so this smoking chimney:
 ![IMG_2515](https://github.com/msglueck/holzofengate-sensor-community-dimplex/assets/36264079/306d308f-a757-4b11-a2b4-8e4e39e32fe8)
 
 will give us this fancy graph:
