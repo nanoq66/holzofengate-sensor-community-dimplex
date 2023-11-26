@@ -236,7 +236,7 @@ else:
 ```
 
 # Grafana
-Install Grafana, setup your Prometheus instance as a datasource and create a new dashboard by importing the dashboard.json in this repository.
+Install Grafana, setup your Prometheus instance as a datasource and create a new dashboard by importing the [dashboard.json](dashboard.json) in this repository.
 
 
 
