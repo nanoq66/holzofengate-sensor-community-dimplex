@@ -4,6 +4,8 @@ Integration of sensor-community air sensor data with Prometheus &amp; Alertmanag
 # Motivation
 The area I am living in is rather rural and many residents are historically (e.g. they own forests and are generating an income from selling fire wood) heating their houses with wood stoves. The pollution of these ovens, especially during initial ignition, can be rather high. Several factors (e.g. type of oven, ignition skills, wood type, dryness of wood) can play a role here, but the idea behind this project is not the political discussion around pro/con wood heating, air-pollution and #holzofengate, but a technical citizen science solution to mitigate the smoke issue for owners of modern houses with centralized ventilation.
 
+
+
 # Architecture
 [sensor-communitity air quality sensor](http://www.luftdaten.info/)  or https://github.com/Naesstrom/Airrohr-kit
 
@@ -31,6 +33,16 @@ and of course for monitoring & visualization we use [Grafana](https://grafana.co
 
 # #tl;dr
 if it stinks, no ventilation. :)
+
+so this
+![IMG_2515](https://github.com/msglueck/holzofengate-sensor-community-dimplex/assets/36264079/306d308f-a757-4b11-a2b4-8e4e39e32fe8)
+
+will give us this fancy graph:
+![IMG_1947](https://github.com/msglueck/holzofengate-sensor-community-dimplex/assets/36264079/1b4760ce-5134-45b8-b7e1-c57b0470a34a)
+
+and based on our thresholds it will switch the ventilation off (the rpm drops):
+![IMG_2514](https://github.com/msglueck/holzofengate-sensor-community-dimplex/assets/36264079/8cb449a1-4a68-4e4b-a443-de9df4d7d729)
+
 
 # Installation - how it's glued together
 ### Note: I won't dive into details how to setup linux basics like Python 3.x, apt or pip usage... please google or take use the manuals of the linked tools
@@ -238,6 +250,7 @@ else:
 # Grafana
 Install Grafana, setup your Prometheus instance as a datasource and create a new dashboard by importing the [dashboard.json](dashboard.json) in this repository.
 
+<img width="1413" alt="Screenshot 2023-11-26 at 21 00 47" src="https://github.com/msglueck/holzofengate-sensor-community-dimplex/assets/36264079/ab729411-145e-4957-aaa6-2f53cf4dcae3">
 
 
 
